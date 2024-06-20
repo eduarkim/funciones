@@ -92,11 +92,10 @@ retorne "This is a string mountain andes".
 Ejemplo: formatearTexto("  thIs Is a StrIng MounTAin AndES   "), retorne "This is a string mountain andes" 
 */
 function formatearTexto(texto){
-    let textosinespacio = texto.trim()  // elimina los espacios iniciales y finales
-    let textominuscula = textosinespacio.toLowerCase()   // convierte en minúscula
-    let primeraletra = textominuscula.charAt(0)     //   elige la primera letra
+    let minusculaysinespacio = texto.trim().toLowerCase()   // elimina los espacios ini y fin y convierte todo en minuscula
+    let primeraletra = minusculaysinespacio.charAt(0)     //   elige la primera letra
     let primeramayuscula = primeraletra.toUpperCase()   // lo convierte en mayuscula
-    let restotexto = textominuscula.slice(1)  // recorta desde la segunda letra
+    let restotexto = minusculaysinespacio.slice(1)  // recorta desde la segunda letra
     return textocompleto = primeramayuscula + restotexto
 }
 
